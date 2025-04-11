@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"
+    ></script>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="corner-light"></div>
+      <h1 class="title">Lumina</h1>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="spline-container">
+        <spline-viewer
+          url="https://prod.spline.design/PXbaojSwZEcqoTVE/scene.splinecode"
+        ></spline-viewer>
+      </div>
+      <button class="get-started-btn">Begin Healing</button>
+      <div class="main-text">
+        <p class="text-line"><span class="typing-text"></span></p>
+        <p class="text-line"><span class="typing-text-2"></span></p>
+        <p class="text-line"><span class="typing-text-3"></span></p>
+        <p class="text-line tagline"><span class="typing-text-4"></span></p>
+        <button class="get-started-btn bottom-btn">Begin Healing</button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
