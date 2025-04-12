@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"
+    ></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <section class="hero">
+        <div class="corner-light"></div>
+        <h1 class="title">Lumina</h1>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#">How It Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="spline-container">
+          <spline-viewer
+            url="https://prod.spline.design/PXbaojSwZEcqoTVE/scene.splinecode"
+          ></spline-viewer>
+        </div>
+        <button class="get-started-btn">Begin Healing</button>
+        <div class="main-text">
+          <p class="text-line"><span class="typing-text"></span></p>
+          <p class="text-line"><span class="typing-text-2"></span></p>
+          <p class="text-line"><span class="typing-text-3"></span></p>
+          <p class="text-line tagline"><span class="typing-text-4"></span></p>
+          <button class="get-started-btn bottom-btn">Begin Healing</button>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="browser-mockup">
+          <div class="browser-header">
+            <div class="browser-dot"></div>
+            <div class="browser-dot"></div>
+            <div class="browser-dot"></div>
+          </div>
+          <div class="browser-content">
+            <div class="about-content">
+              <h2 class="about-title">About Lumina</h2>
+              <div class="mockup-content">
+                <div class="about-intro">
+                  <p class="about-text">
+                    🤖 Lumina is an AI emotional companion designed to provide
+                    support, understanding, and guidance when you need it most.
+                    🌟 Our mission is to ensure that nobody feels alone with
+                    their thoughts and emotions. ❤️
+                  </p>
+                  <div class="about-image">
+                    <div class="image-container">
+                      <svg
+                        viewBox="0 0 200 200"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill="#FF0066"
+                          d="M47.7,-51.2C59.5,-34.7,65.6,-17.3,68.3,2.7C70.9,22.7,70.1,45.4,58.3,57.4C46.4,69.3,23.2,70.4,0.9,69.4C-21.3,68.4,-42.7,65.3,-54.4,53.3C-66.2,41.3,-68.4,20.7,-67.6,0.8C-66.8,-19.1,-63,-38.1,-51.4,-54.5C-39.7,-70.9,-19.9,-84.7,-0.8,-83.9C18.2,-83.1,36.4,-67.7,47.7,-51.2Z"
+                          transform="translate(100 100)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="about-story">
+                  <h3 class="section-heading">Our Story</h3>
+                  <p class="about-paragraph">
+                    📚 Founded on the belief that everyone deserves emotional
+                    support, Lumina was created to bridge the gap between
+                    traditional therapy and daily emotional needs. 🧠 Our team
+                    of psychologists, AI researchers, and wellness experts
+                    worked together to develop a companion that listens without
+                    judgment and responds with empathy. 💞
+                  </p>
+                </div>
+
+                <div class="about-philosophy">
+                  <h2 class="section-heading">Our Philosophy</h2>
+                  <p class="about-text">
+                    ✨ At Lumina, we believe in the power of being heard. 🎧 Our
+                    approach combines active listening with personalized
+                    guidance, creating a safe space for emotional exploration
+                    and growth. 🌱 We're committed to making mental wellness
+                    accessible to everyone, whenever they need it. 💫
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features-full-section">
+        <h2 class="features-title">What Makes Lumina Special</h2>
+
+        <div class="features-container">
+          <div class="feature-card" style="--card-index: 1">
+            <div class="feature-icon-large">✅</div>
+            <h3 class="feature-card-title">
+              Relationship-Based Personalization
+            </h3>
+            <p class="feature-card-desc">
+              Talk to someone you miss – be it Mom, Dad, Friend, or anyone you
+              choose.
+            </p>
+            <p class="feature-highlight">
+              ➤ Personalized conversations tailored to your selected
+              relationship.
+            </p>
+          </div>
+
+          <div class="feature-card" style="--card-index: 2">
+            <div class="feature-icon-large">🧠</div>
+            <h3 class="feature-card-title">Emotionally Intelligent AI</h3>
+            <p class="feature-card-desc">
+              Understands your feelings and responds with empathy.
+            </p>
+            <p class="feature-highlight">
+              ➤ Built-in emotion detection to tailor replies gently.
+            </p>
+          </div>
+
+          <div class="feature-card" style="--card-index: 3">
+            <div class="feature-icon-large">🧘</div>
+            <h3 class="feature-card-title">Theray & Mood Boosters</h3>
+            <p class="feature-card-desc">
+              Access a variety of mood-lifting activities and exercises to
+              brighten your day.
+            </p>
+            <p class="feature-highlight">
+              ➤ Includes meditation, music, and positive affirmations.
+            </p>
+          </div>
+
+          <div class="feature-card" style="--card-index: 4">
+            <div class="feature-icon-large">🗣️</div>
+            <h3 class="feature-card-title">Voice Cloning of Loved Ones</h3>
+            <p class="feature-card-desc">
+              Upload a short voice sample, and Lumina speaks like them.
+            </p>
+            <p class="feature-highlight">
+              ➤ Realistic voice responses using ElevenLabs voice cloning.
+            </p>
+          </div>
+
+          <div class="feature-card" style="--card-index: 5">
+            <div class="feature-icon-large">🌍</div>
+            <h3 class="feature-card-title">Multilingual Support</h3>
+            <p class="feature-card-desc">
+              Express your emotions in the language that feels most natural to
+              you. Lumina understands cultural nuances and emotional expressions
+              across multiple languages.
+            </p>
+            <p class="feature-highlight">
+              ➤ Supports 10+ languages including English, Spanish, French,
+              German, Hindi, Japanese, and more.
+            </p>
+          </div>
+
+          <div class="feature-card" style="--card-index: 6">
+            <div class="feature-icon-large">💬</div>
+            <h3 class="feature-card-title">Text & Voice Conversations</h3>
+            <p class="feature-card-desc">
+              Type or talk – get loving replies either way.
+            </p>
+            <p class="feature-highlight">
+              ➤ Seamless chat experience with both text and voice support.
+            </p>
+          </div>
+
+          <div class="feature-card" style="--card-index: 7">
+            <div class="feature-icon-large">🌈</div>
+            <h3 class="feature-card-title">Personality Selection</h3>
+            <p class="feature-card-desc">
+              Choose how your AI loved one should behave – calm, fun, strict, or
+              emotional.
+            </p>
+            <p class="feature-highlight">
+              ➤ Dynamic tone adjustments to match user preferences.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="how-it-works-section">
+        <h2 class="section-title">How It Works</h2>
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+          <div class="timeline-steps">
+            <div class="timeline-step left">
+              <div class="step-content">
+                <div class="step-icon">👥</div>
+                <h3>Choose a Relationship</h3>
+                <p>Select who you want to talk to – Mom, Dad, Friend, etc.</p>
+              </div>
+            </div>
+            <div class="timeline-step right">
+              <div class="step-content">
+                <div class="step-icon">✏️</div>
+                <h3>Enter Your Nickname</h3>
+                <p>How should they call you? (e.g., buddy, Nithish)</p>
+              </div>
+            </div>
+            <div class="timeline-step left">
+              <div class="step-content">
+                <div class="step-icon">🎭</div>
+                <h3>Pick a Personality</h3>
+                <p>Choose a tone: Calm, Fun, Strict, or Emotional.</p>
+              </div>
+            </div>
+            <div class="timeline-step right">
+              <div class="step-content">
+                <div class="step-icon">🎤</div>
+                <h3>Upload a Voice Sample</h3>
+                <p>
+                  Add a loved one's voice if you want Lumina to sound like them.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-step left">
+              <div class="step-content">
+                <div class="step-icon">💬</div>
+                <h3>Start Chatting</h3>
+                <p>Type or talk – Lumina will respond in a caring voice.</p>
+              </div>
+            </div>
+            <div class="timeline-step right">
+              <div class="step-content">
+                <div class="step-icon">🎵</div>
+                <h3>Enjoy Mood Boosters</h3>
+                <p>
+                  Explore therapy tools: music, jokes, affirmations, and more.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="contact-container">
+          <h2 class="contact-title">Get in Touch</h2>
+          <p class="contact-subtitle">
+            We're here to help and answer any questions you may have
+          </p>
+
+          <div class="contact-grid">
+            <div class="contact-card">
+              <div class="contact-icon">📧</div>
+              <h3>Email Us</h3>
+              <p>support@lumina.ai</p>
+              <a href="mailto:support@lumina.ai" class="contact-link"
+                >Send Message</a
+              >
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">💬</div>
+              <h3>Live Chat</h3>
+              <p>Available 24/7 for instant support</p>
+              <a href="#" class="contact-link">Start Chat</a>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">📱</div>
+              <h3>Social Media</h3>
+              <p>Connect with us on social platforms</p>
+              <div class="social-links">
+                <a href="#" class="social-link">
+                  <svg
+                    class="social-icon"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="social-link">
+                  <svg
+                    class="social-icon"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="social-link">
+                  <svg
+                    class="social-icon"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">📞</div>
+              <h3>Phone Support</h3>
+              <p>+1 (555) 123-4567</p>
+              <a href="tel:+15551234567" class="contact-link">Call Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
