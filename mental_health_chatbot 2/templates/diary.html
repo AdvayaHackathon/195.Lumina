@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Diary</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #1a1a2e;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        padding: 30px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1 {
+        color: #ff6584;
+        margin-bottom: 25px;
+        text-align: center;
+      }
+
+      form {
+        width: 100%;
+        max-width: 700px;
+        background: #2d3748;
+        padding: 30px;
+        border-radius: 15px;
+        margin-bottom: 40px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      }
+
+      textarea {
+        width: 100%;
+        height: 200px;
+        padding: 15px;
+        font-size: 1rem;
+        font-family: "Poppins", sans-serif;
+        background: #1a202c;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        resize: none;
+        margin-bottom: 20px;
+      }
+
+      button {
+        padding: 12px 25px;
+        background: linear-gradient(90deg, #6c63ff, #5a52d9);
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        background: linear-gradient(90deg, #5a52d9, #6c63ff);
+      }
+
+      .success {
+        margin-top: 15px;
+        color: #48bb78;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+        text-align: center;
+        color: #f6ad55;
+      }
+
+      .entries-wrapper {
+        width: 100%;
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .entry {
+        background-color: #2d3748;
+        padding: 20px;
+        border-radius: 12px;
+        white-space: pre-wrap;
+        text-align: left;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .no-entry {
+        color: #a0aec0;
+        text-align: center;
+      }
+
+      @media (max-width: 768px) {
+        form,
+        .entries-wrapper {
+          padding: 20px;
+        }
+
+        textarea {
+          height: 150px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>📓 My Diary</h1>
+
+    <form method="POST">
+      <textarea
+        name="entry"
+        placeholder="Write your thoughts here..."
+      ></textarea
+      ><br />
+      <button type="submit">Save Entry</button>
+    </form>
+    <form method="POST" action="/clear_diary" style="margin-top: 15px">
+      <button type="submit" style="background-color: #e53e3e">
+        🗑️ Clear All Diaries
+      </button>
+    </form>
+
+    {% if saved %}
+    <p class="success">✅ Your diary entry was saved!</p>
+    {% endif %}
+
+    <h2>📚 Past Entries</h2>
+
+    <div class="entries-wrapper">
+      {% for entry in entries %}
+      <div class="entry">{{ entry }}</div>
+      {% else %}
+      <p class="no-entry">No entries yet. Start writing!</p>
+      {% endfor %}
+    </div>
+  </body>
+</html>

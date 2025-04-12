@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>🎭 Fun Therapy</title>
+    <style>
+      body {
+        background-color: #1a1a2e;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        padding: 40px;
+        text-align: center;
+      }
+
+      h1 {
+        color: #ff6584;
+        margin-bottom: 30px;
+      }
+
+      .card {
+        background-color: #2d3748;
+        padding: 25px;
+        border-radius: 15px;
+        margin: 20px auto;
+        max-width: 700px;
+        font-size: 1.1rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        transition: 0.3s;
+      }
+
+      .card strong {
+        display: block;
+        margin-bottom: 8px;
+        color: #f6ad55;
+        font-size: 1.2rem;
+      }
+
+      .refresh-btn {
+        margin-top: 30px;
+        padding: 12px 25px;
+        background: linear-gradient(90deg, #6c63ff, #5a52d9);
+        color: white;
+        border: none;
+        border-radius: 12px;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .refresh-btn:hover {
+        background: linear-gradient(90deg, #5a52d9, #6c63ff);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🎭 Fun Therapy</h1>
+
+    <div class="card">
+      <strong>Joke</strong>
+      <p id="joke">Loading...</p>
+    </div>
+
+    <div class="card">
+      <strong>Riddle</strong>
+      <p id="riddle">Loading...</p>
+    </div>
+
+    <div class="card">
+      <strong>Fun Fact</strong>
+      <p id="fact">Loading...</p>
+    </div>
+
+    <button class="refresh-btn" id="refreshBtn">🎲 Show Me More!</button>
+
+    <script>
+      async function loadFunContent() {
+        const response = await fetch("/fun/random");
+        const data = await response.json();
+
+        document.getElementById("joke").textContent = data.joke;
+        document.getElementById("riddle").textContent = data.riddle;
+        document.getElementById("fact").textContent = data.fact;
+      }
+
+      window.addEventListener("DOMContentLoaded", () => {
+        loadFunContent();
+        document
+          .getElementById("refreshBtn")
+          .addEventListener("click", loadFunContent);
+      });
+    </script>
+  </body>
+</html>
